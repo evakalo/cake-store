@@ -1,0 +1,21 @@
+body {
+  color: wheat;
+  font-family: monospace;
+  background-image: url("../public/images/cookies.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+  text-align: center;
+}
+.enter-button {
+  margin-top: 20px;
+  margin: 0 auto;
+  color: rgb(146, 98, 7);
+  height: 50px;
+  width: 230px;
+  font-size: 20px;
+}

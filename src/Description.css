@@ -1,0 +1,30 @@
+.description-component {
+  position: absolute;
+  bottom: 180px;
+  font-family: sans-serif;
+  left: 100px;
+  line-height: 1.5;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.description {
+  width: 800px;
+  color: rgb(253, 245, 230);
+}
+
+.enter-button {
+  color: rgb(253, 245, 230);
+  background-color: rgb(95, 133, 117);
+  border-radius: 30%;
+  border: 1px rgba(95, 133, 117, 0.795);
+  width: 270px;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  margin-top: 10px;
+}

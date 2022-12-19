@@ -1,0 +1,43 @@
+.cookie {
+  color: rgb(255, 253, 247);
+  font-size: 20px;
+  display: flex;
+  width: 80%;
+  padding: 10px;
+  border: 2px solid cornsilk;
+  border-radius: 5px;
+  background-color: hsla(34, 65%, 18%, 0.501);
+}
+.ul {
+  list-style: none;
+}
+.cookie img {
+  width: 170px;
+  height: 170px;
+  margin-top: 10px;
+  margin-right: 10px;
+  float: inline-start;
+  border-radius: 5px;
+}
+button {
+  color: rgb(253, 245, 230);
+  background-color: rgb(95, 133, 117);
+  border-radius: 30%;
+  border: 1px rgba(95, 133, 117, 0.795);
+  width: 180px;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+button:disabled {
+  background-color: rgb(255, 255, 255);
+  color: rgba(119, 12, 12, 0.788);
+}
