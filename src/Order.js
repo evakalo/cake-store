@@ -10,7 +10,6 @@ function Order() {
   const [order, setOrder] = useState({});
   function addCookie(newSampleCookies) {
     setNewSampleCookies(newSampleCookies);
-    console.log(newSampleCookies);
   }
   function addToOrder(key) {
     const newOrder = { ...order }; //makes a copy of the order
@@ -18,7 +17,7 @@ function Order() {
     setOrder(newOrder);
     console.log(newOrder);
   }
-
+  //sad trebas poslati te podatke cart komponenti i da ona prikaže
   return (
     <div className="order">
       <ul className="sampleCookies">
@@ -27,14 +26,15 @@ function Order() {
             key={key}
             index={key}
             details={sampleCookies[key]}
-            addToOrder={addToOrder}
+            addToOrder={addToOrder} //loops over and gives us the key (cookie1,...) use key(unique identifier) so react is faster)
           />
         ))}
       </ul>
       <div className="wrapper-cart">
         <Inventory addCookie={addCookie} sampleCookies={newSampleCookies} />
-        <Cart />
+        <Cart order={order} cookies={sampleCookies} />
       </div>
+      y
     </div>
   );
 }

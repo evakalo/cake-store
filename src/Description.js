@@ -5,7 +5,7 @@ function Description() {
   return (
     <div className="description-component">
       <section className="description">
-        Our freshly made cookies will make every home smell like Christmass
+        Our freshly made cookies will make every house smell like home
       </section>
       <Button />
     </div>

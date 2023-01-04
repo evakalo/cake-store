@@ -1,10 +1,12 @@
 import React from "react";
 import "./Cart.css";
-function Cart() {
+function Cart(props) {
+  const orderIds = Object.keys(props.order);
   return (
     <div className="cart">
       <div className="cart-order">
-        <p>pedido</p>
+        <h2>Order</h2>
+        {orderIds}
       </div>
     </div>
   );
