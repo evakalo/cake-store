@@ -22,7 +22,7 @@ function Inventory(props) {
     };
     newSampleCookies[`cookie${Date.now()}`] = cookie;
 
-    // setNewSampleCookies({ ...newSampleCookies }); //to si promijenila , bio je cookie unutar curly
+    setNewSampleCookies({ ...newSampleCookies }); //to si promijenila , bio je cookie unutar curly
 
     props.addCookie(newSampleCookies);
   }
