@@ -23,7 +23,7 @@ function Cart(props) {
       <div className="cart-order">
         <h2>ORDER</h2>
         <ul className="cart-list"> {orderIndex.map(showOrder)}</ul>
-        <strong>Total:</strong> {formatPrice(total)}
+        Total:<strong> {formatPrice(total)}</strong>
       </div>
     </div>
   );
