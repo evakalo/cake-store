@@ -13,7 +13,7 @@ function Order() {
   }
   function addToOrder(key) {
     const newOrder = { ...order }; //makes a copy of the order
-    newOrder[key] = newOrder[key] + 1 || 1; //adds a new item if there is already add one more, key (cookie number)
+    newOrder[key] = newOrder[key] + 1 || 1; //adds a new item, if there is already add one more, key (cookie number)
     setOrder(newOrder);
     console.log(newOrder);
   }
