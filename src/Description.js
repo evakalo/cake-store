@@ -7,7 +7,7 @@ function Description() {
       <section className="description">
         Our freshly made cookies will make every house smell like home
       </section>
-      <Button />
+      <Button className="enter-buttton" />
     </div>
   );
 }

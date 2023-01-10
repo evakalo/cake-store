@@ -8,7 +8,10 @@ function Cart(props) {
     return (
       <li key={key} className="cookie-order">
         {count} {cookie.name}
-        {formatPrice(count * cookie.price)}
+        <span className="price-cookie">
+          {" "}
+          {formatPrice(count * cookie.price)}
+        </span>
       </li>
     );
   }
@@ -23,7 +26,10 @@ function Cart(props) {
       <div className="cart-order">
         <h2>ORDER</h2>
         <ul className="cart-list"> {orderIndex.map(showOrder)}</ul>
-        Total:<strong> {formatPrice(total)}</strong>
+        <section className="total">
+          {" "}
+          Total:<strong> {formatPrice(total)}</strong>
+        </section>
       </div>
     </div>
   );

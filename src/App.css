@@ -1,8 +1,8 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-image: url("../public/images/tilesbackery.webp");
-  background-repeat: no-repeat;
-  background-size: 1800px;
+  background-repeat: cover;
+  max-width: 100%;
 }
 .header {
   background-color: rgb(148, 96, 61);
@@ -11,7 +11,7 @@ body {
   border-radius: 50%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
-  width: 80px;
+  max-width: 80px;
   padding: 50px;
   text-align: center;
 }

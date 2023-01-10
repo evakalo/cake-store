@@ -1,6 +1,6 @@
 .inventory-form {
-  height: 300px;
-  width: 260px;
+  max-height: 300px;
+  max-width: 260px;
   font-family: "Courier New", Courier, monospace;
   border-radius: 4px;
   padding: 10px;
@@ -15,12 +15,12 @@
   background-color: hsla(0, 0%, 100%, 0.877);
   padding: 5px;
   border: 2px solid black;
-  height: 22px;
+  max-height: 22px;
 }
 
 .inventory-form select {
   font-size: 20px;
-  width: 100%;
+  width: 80%;
   background-color: hsla(0, 0%, 100%, 0.877);
   height: 25px;
   margin-top: 5px;
@@ -28,5 +28,5 @@
 }
 
 .inventory-form button {
-  width: 100%;
+  max-width: 80%;
 }

@@ -7,7 +7,7 @@ function RouterEva() {
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/order" element={<Order />} />
-        {/* <Route path="/inventory" element={<Inventory />} /> */}
+        {/* <Route path="/inventory" element={<InventoryTwo />} /> */}
       </Routes>
     </>
   );

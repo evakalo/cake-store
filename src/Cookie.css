@@ -1,9 +1,13 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
 .cookie {
   color: rgb(255, 253, 247);
   font-size: 20px;
-  display: flex;
-  width: 80%;
-  padding: 10px;
+
+  margin-right: 0;
+  padding: 8px;
   border: 2px solid cornsilk;
   border-radius: 5px;
   background-color: hsla(34, 65%, 18%, 0.501);

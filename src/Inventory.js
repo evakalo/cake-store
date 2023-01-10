@@ -34,10 +34,10 @@ function Inventory(props) {
         <input name="price" type="text" placeholder="Price" />
         <input name="desc" type="text" placeholder="Desc" />
         <input name="image" type="text" placeholder="Image" />
-        <select name="status">
+        {/* <select name="status">
           <option value="available">Fresh batch</option>
           <option value="unavailable">Sold Out!</option>
-        </select>
+        </select> */}
         <button type="submit">+ Add cookie</button>
       </form>
     </div>

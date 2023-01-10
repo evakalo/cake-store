@@ -11,24 +11,26 @@ function Cookie(props) {
   return (
     <>
       {" "}
-      <li className="cookie">
-        <img src={image} alt="" className="image-cookie"></img>
-        <span className="cookie-text">
-          <h3 className="cookie-name"> {name} </h3>
-          <span className="price">{formatPrice(price)} </span>
-          <span>
-            <p className="description">{desc}</p>
+      <div className="container">
+        <li className="cookie">
+          <img src={image} alt="" className="image-cookie"></img>
+          <span className="cookie-text">
+            <h3 className="cookie-name"> {name} </h3>
+            <span className="price">{formatPrice(price)} </span>
+            <span>
+              <p className="description">{desc}</p>
+            </span>
           </span>
-        </span>
-      </li>
-      <button
-        className="add-to-cart"
-        disabled={!isAvailable}
-        onClick={handleClick}
-      >
-        {" "}
-        {isAvailable ? "Add to cart" : "Sold out"}
-      </button>
+        </li>
+        <button
+          className="add-to-cart"
+          disabled={!isAvailable}
+          onClick={handleClick}
+        >
+          {" "}
+          {isAvailable ? "Add to cart" : "Sold out"}
+        </button>
+      </div>
     </>
   );
 }
