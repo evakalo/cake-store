@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Cookie from "./Cookie";
 import sampleCookies from "./Cookies";
 import Inventory from "./Inventory";
@@ -15,9 +15,21 @@ function Order() {
     const newOrder = { ...order }; //makes a copy of the order
     newOrder[key] = newOrder[key] + 1 || 1; //adds a new item, if there is already add one more, key (cookie number)
     setOrder(newOrder);
-    console.log(newOrder);
+    // console.log(newOrder);
   }
   //sad trebas poslati te podatke cart komponenti i da ona prikaže
+  useEffect(() => {
+    localStorage.setItem("order", JSON.stringify(order));
+  }, [order]);
+
+  useEffect(() => {
+    const order = JSON.parse(localStorage.getItem("order"));
+    console.log(order);
+    if (order) {
+      setOrder(order);
+    }
+  }, []);
+
   return (
     <div className="order">
       <ul className="sampleCookies">
