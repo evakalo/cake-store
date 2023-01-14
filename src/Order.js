@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Cookie from "./Cookie";
 import sampleCookies from "./Cookies";
 import Inventory from "./Inventory";
-import InventoryButton from "./InventoryButton";
 import Cart from "./Cart";
 import "./Order.css";
 
@@ -33,8 +32,8 @@ function Order() {
       </ul>
       <div className="wrapper-cart">
         <Cart order={order} cookies={sampleCookies} />
-        {/* <InventoryButton /> */}
-        <Inventory addCookie={addCookie} sampleCookies={newSampleCookies} /> */}
+
+        <Inventory addCookie={addCookie} sampleCookies={newSampleCookies} />
       </div>
       y
     </div>

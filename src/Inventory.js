@@ -28,7 +28,7 @@ function Inventory(props) {
   }
   return (
     <div className="inventory-form">
-      <h2>Inventory form</h2>
+      <h2 className="title-inventory">Inventory form</h2>
       <form onSubmit={createCookie}>
         <input name="name" type="text" placeholder="Name" />
         <input name="price" type="text" placeholder="Price" />
@@ -38,7 +38,9 @@ function Inventory(props) {
           <option value="available">Fresh batch</option>
           <option value="unavailable">Sold Out!</option>
         </select> */}
-        <button type="submit">+ Add cookie</button>
+        <button type="submit" className="button-inventory">
+          + Add cookie
+        </button>
       </form>
     </div>
   );

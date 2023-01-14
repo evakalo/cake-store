@@ -1,6 +1,6 @@
 .container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  /* flex-direction: column; */
 }
 .cookie {
   color: rgb(255, 253, 247);

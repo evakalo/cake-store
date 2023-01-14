@@ -4,6 +4,8 @@
   background-size: cover;
   background-color: hsla(39, 67%, 47%, 0.027);
   display: flex;
+
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -11,7 +13,4 @@ ul {
   list-style: none;
   margin-left: 0;
   padding-left: 0;
-}
-
-.wrapper-cart {
 }

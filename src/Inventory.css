@@ -1,32 +1,55 @@
 .inventory-form {
-  max-height: 300px;
-  max-width: 260px;
   font-family: "Courier New", Courier, monospace;
   border-radius: 4px;
-  padding: 10px;
-  padding-bottom: 30px;
-  border: 2px solid hsla(34, 65%, 18%);
-  background-color: hsla(34, 65%, 18%, 0.501);
+  margin-top: 100px;
+  padding: 20px 10px;
+  border: 2px solid #4c3210;
+  background-color: hsla(34, 54%, 23%, 0.501);
+  max-width: 350px;
+  text-align: center;
+}
+.title-inventory {
+  color: white;
+  text-align: center;
+}
+
+.form {
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 10px;
 }
 
 .inventory-form input {
   font-size: 20px;
+
   border-radius: 4px;
   background-color: hsla(0, 0%, 100%, 0.877);
   padding: 5px;
   border: 2px solid black;
-  max-height: 22px;
 }
 
-.inventory-form select {
+.button-inventory {
+  color: rgb(253, 245, 230);
+  background-color: rgb(95, 133, 117);
+  border-radius: 30%;
+  border: 1px rgba(95, 133, 117, 0.795);
+  width: 180px;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+
+  display: inline-block;
+
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+/* .inventory-form select {
   font-size: 20px;
   width: 80%;
   background-color: hsla(0, 0%, 100%, 0.877);
   height: 25px;
   margin-top: 5px;
   border-radius: 4px;
-}
-
-.inventory-form button {
-  max-width: 80%;
-}
+} */

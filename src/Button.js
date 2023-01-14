@@ -10,7 +10,7 @@ function Button() {
 
   return (
     <div>
-      <button className="enter-button" onClick={goToStore}>
+      <button className="enter-button-landing-page" onClick={goToStore}>
         Order now!
       </button>
     </div>
