@@ -7,7 +7,15 @@ import "./Order.css";
 
 function Order() {
   const [newSampleCookies, setNewSampleCookies] = useState(sampleCookies);
-  const [order, setOrder] = useState({});
+  const [order, setOrder] = useState(() => {
+    const savedOrder = localStorage.getItem("order");
+
+    if (savedOrder) {
+      return JSON.parse(savedOrder);
+    } else {
+      return [];
+    }
+  });
   function addCookie(newSampleCookies) {
     setNewSampleCookies(newSampleCookies);
   }
