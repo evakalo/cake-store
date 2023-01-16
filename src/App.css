@@ -1,8 +1,6 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-image: url("../public/images/tilesbackery.webp");
-
-  height: 700px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -18,5 +16,11 @@ body {
   padding: 50px;
   text-align: center;
 }
-.landing-page {
+.store {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
 }

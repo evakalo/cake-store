@@ -11,7 +11,7 @@ function Button() {
   return (
     <div>
       <button className="enter-button-landing-page" onClick={goToStore}>
-        Order now!
+        Enter the bakery
       </button>
     </div>
   );
