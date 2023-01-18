@@ -1,5 +1,9 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: black;
+}
+.landing-page {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-image: url("../public/images/tilesbackery.webp");
   background-position: center;
   background-repeat: no-repeat;

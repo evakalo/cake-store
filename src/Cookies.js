@@ -2,7 +2,7 @@ const sampleCookies = {
   cookie1: {
     name: "Classic Chocolate Chip",
     image: "../images/chip.webp",
-    desc: "Everyone’s favorite cookie made with organic dark chocolate.",
+    desc: "Everyone’s favorite cookie made with dark chocolate.",
     price: 1924,
     status: "available",
   },
@@ -18,7 +18,7 @@ const sampleCookies = {
   cookie3: {
     name: "Cupcake",
     image: "../images/lemoncupcake.webp",
-    desc: "These beauties are a fantastic hit at any dinner party.",
+    desc: "These beauties are fantastic at any dinner party.",
     price: 3200,
     status: "available",
   },
@@ -34,7 +34,7 @@ const sampleCookies = {
   cookie5: {
     name: "Mascarpone Cake",
     image: "../images/mascarpone.jpeg",
-    desc: "Perfect combination of sweetness with a touch of bitter black coffee.",
+    desc: "Perfect combination of sweetness with a touch of coffee.",
     price: 1129,
     status: "available",
   },

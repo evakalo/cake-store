@@ -11,7 +11,7 @@ function App() {
         <Description />
         <Button className="enter-buttton" />
         <Contact />
-      </div>{" "}
+      </div>
     </div>
   );
 }

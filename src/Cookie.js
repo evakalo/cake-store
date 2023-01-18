@@ -5,7 +5,7 @@ function Cookie(props) {
   const { image, name, price, desc, status } = props.details;
   const isAvailable = status === "available";
   function handleClick(event) {
-    console.log(props.index); //props.index is the key - cookie1,...
+    //props.index is the key - cookie1,...
     props.addToOrder(props.index); //function is in the order component
   }
   return (

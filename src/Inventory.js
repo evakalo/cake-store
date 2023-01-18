@@ -1,15 +1,18 @@
 import React, { useState } from "react";
 import "./Inventory.css";
 import "./Order.css";
+
 function Inventory(props) {
   const [newSampleCookies, setNewSampleCookies] = useState(props.sampleCookies);
+
+  function openInventory() {}
 
   let cookie = {
     name: "",
     image: "",
     desc: "",
     price: "",
-    status: "",
+    // status: ""
   };
 
   function createCookie(event) {
@@ -18,11 +21,11 @@ function Inventory(props) {
       name: event.target.name.value,
       price: event.target.price.value,
       desc: event.target.desc.value,
-      status: event.target.status.value,
+      // status: event.target.status.value,
     };
     newSampleCookies[`cookie${Date.now()}`] = cookie;
 
-    setNewSampleCookies({ ...newSampleCookies }); //to si promijenila , bio je cookie unutar curly
+    setNewSampleCookies({ ...newSampleCookies });
 
     props.addCookie(newSampleCookies);
   }
@@ -40,6 +43,13 @@ function Inventory(props) {
         </select> */}
         <button type="submit" className="button-inventory">
           + Add cookie
+        </button>
+        <button
+          type="button"
+          className="button-enter-inventory"
+          onClick={openInventory}
+        >
+          Inventory
         </button>
       </form>
     </div>

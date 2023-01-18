@@ -1,5 +1,6 @@
 .cart {
   flex-basis: 1;
+  margin-top: 20px;
 }
 .cart-order {
   border: 2px solid hsla(34, 65%, 18%);
