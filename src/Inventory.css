@@ -44,14 +44,13 @@
   border-radius: 12px;
 }
 
-/* .inventory-form select {
+.inventory-form select {
   font-size: 20px;
-  width: 80%;
+  width: 70%;
   background-color: hsla(0, 0%, 100%, 0.877);
-  height: 25px;
-  margin-top: 5px;
   border-radius: 4px;
-} */
+  padding: 5px;
+}
 
 .button-enter-inventory {
   color: rgb(253, 245, 230);

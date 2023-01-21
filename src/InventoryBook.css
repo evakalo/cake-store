@@ -5,3 +5,10 @@
   padding: 2px;
   border: 2px solid hsla(34, 65%, 18%);
 }
+
+.remove-button {
+  margin: 0 auto;
+
+  padding: 10px;
+  font-size: 15px;
+}

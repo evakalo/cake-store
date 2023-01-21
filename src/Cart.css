@@ -39,3 +39,17 @@ h2 {
 .price-cookie {
   padding-left: 2px;
 }
+.remove-button {
+  max-width: min-content;
+  color: black;
+  font-weight: bold;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 5px 8px;
+  margin: 1px 5px;
+}
+
+.remove-button:hover {
+  background-color: rgb(182, 75, 75);
+}

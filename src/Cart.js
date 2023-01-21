@@ -12,6 +12,12 @@ function Cart(props) {
           {" "}
           {formatPrice(count * cookie.price)}
         </span>
+        <button
+          className="remove-button"
+          onClick={() => props.removeFromOrder(key)}
+        >
+          x
+        </button>
       </li>
     );
   }

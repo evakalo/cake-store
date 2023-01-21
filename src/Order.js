@@ -7,7 +7,9 @@ import Cart from "./Cart";
 import "./Order.css";
 
 function Order() {
+  const [showInventory, setShowInventory] = useState(false);
   const [newSampleCookies, setNewSampleCookies] = useState(sampleCookies);
+
   const [order, setOrder] = useState(() => {
     const savedOrder = localStorage.getItem("order");
 
@@ -17,6 +19,10 @@ function Order() {
       return [];
     }
   });
+
+  function openInventory(event) {
+    setShowInventory(true);
+  }
 
   function addCookie(newSampleCookies) {
     setNewSampleCookies(newSampleCookies);
@@ -28,11 +34,26 @@ function Order() {
     // console.log(newOrder)
   }
   //sad trebas poslati te podatke cart komponenti i da ona prikaže
+
+  function removeFromOrder(key) {
+    const newOrder = { ...order };
+    delete newOrder[key];
+    //you have to put null and not delete, if you want to update the firebase
+    setOrder(newOrder);
+    console.log(newOrder);
+  }
   function updateCookie(key, updatedCookie) {
     const newCookies = { ...newSampleCookies };
     newCookies[key] = updatedCookie;
     setNewSampleCookies(newCookies);
     console.log(newSampleCookies);
+  }
+
+  function removeCookie(key) {
+    const removedCookies = { ...newSampleCookies };
+    delete removedCookies[key];
+    setNewSampleCookies(removedCookies);
+    console.log(removedCookies);
   }
 
   useEffect(() => {
@@ -50,7 +71,7 @@ function Order() {
   return (
     <div className="order">
       <ul className="sampleCookies">
-        {Object.keys(sampleCookies).map((key) => (
+        {Object.keys(newSampleCookies).map((key) => (
           <Cookie
             key={key}
             index={key}
@@ -60,25 +81,30 @@ function Order() {
         ))}
       </ul>
       <div className="wrapper-cart">
-        <Cart order={order} cookies={sampleCookies} />
-
+        <Cart
+          order={order}
+          cookies={sampleCookies}
+          removeFromOrder={removeFromOrder}
+        />
         <Inventory addCookie={addCookie} sampleCookies={newSampleCookies} />
-        {/* <button
+        <button
           type="button"
           className="button-enter-inventory"
           onClick={openInventory}
         >
-          Inventory
-        </button> */}
-        {Object.keys(newSampleCookies).map((key) => (
-          <InventoryBook
-            disabled={false}
-            key={key}
-            index={key}
-            cookie={newSampleCookies[key]}
-            updateCookie={updateCookie}
-          />
-        ))}
+          Change Inventory
+        </button>
+
+        {showInventory &&
+          Object.keys(newSampleCookies).map((key) => (
+            <InventoryBook
+              key={key}
+              index={key}
+              cookie={newSampleCookies[key]}
+              updateCookie={updateCookie}
+              removeCookie={removeCookie}
+            />
+          ))}
       </div>
     </div>
   );

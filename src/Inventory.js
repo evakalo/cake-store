@@ -5,28 +5,24 @@ import "./Order.css";
 function Inventory(props) {
   const [newSampleCookies, setNewSampleCookies] = useState(props.sampleCookies);
 
-  function openInventory() {}
-
-  let cookie = {
-    name: "",
-    image: "",
-    desc: "",
-    price: "",
-    // status: ""
-  };
+  // let cookie = {
+  //   name: "",
+  //   image: "",
+  //   desc: "",
+  //   price: "",
+  //   status: "",
+  // };
 
   function createCookie(event) {
     event.preventDefault();
-    cookie = {
+    let cookie = {
       name: event.target.name.value,
       price: event.target.price.value,
       desc: event.target.desc.value,
-      // status: event.target.status.value,
+      status: event.target.status.value,
     };
     newSampleCookies[`cookie${Date.now()}`] = cookie;
-
     setNewSampleCookies({ ...newSampleCookies });
-
     props.addCookie(newSampleCookies);
   }
   return (
@@ -37,19 +33,14 @@ function Inventory(props) {
         <input name="price" type="text" placeholder="Price" />
         <input name="desc" type="text" placeholder="Desc" />
         <input name="image" type="text" placeholder="Image" />
-        {/* <select name="status">
+
+        <select name="status">
           <option value="available">Fresh batch</option>
           <option value="unavailable">Sold Out!</option>
-        </select> */}
+        </select>
+
         <button type="submit" className="button-inventory">
           + Add cookie
-        </button>
-        <button
-          type="button"
-          className="button-enter-inventory"
-          onClick={openInventory}
-        >
-          Inventory
         </button>
       </form>
     </div>

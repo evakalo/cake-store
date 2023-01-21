@@ -21,3 +21,9 @@ ul {
   align-items: stretch;
   /* margin-right: 40px; */
 }
+
+.button-enter-inventory {
+  margin: 0 auto;
+  background-color: whitesmoke;
+  color: rgb(182, 75, 75);
+}
