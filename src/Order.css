@@ -25,5 +25,8 @@ ul {
 .button-enter-inventory {
   margin: 0 auto;
   background-color: whitesmoke;
-  color: rgb(182, 75, 75);
+  color: rgba(187, 84, 84, 0.753);
+  color: #4c3210;
+
+  border: 3px ridge #4c3210;
 }

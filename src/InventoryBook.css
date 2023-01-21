@@ -3,10 +3,10 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   flex-direction: column;
   padding: 2px;
-  border: 2px solid hsla(34, 65%, 18%);
+  border: 2px inset hsla(34, 65%, 18%);
 }
 
-.remove-button {
+.remove-button-inventory {
   margin: 0 auto;
 
   padding: 10px;

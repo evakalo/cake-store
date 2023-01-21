@@ -51,7 +51,7 @@ function InventoryBook(props) {
         />
         <button
           type="button"
-          className="remove-button"
+          className="remove-button-inventory"
           onClick={() => props.removeCookie(props.index)}
         >
           Remove
