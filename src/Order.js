@@ -92,7 +92,7 @@ function Order() {
           className="button-enter-inventory"
           onClick={openInventory}
         >
-          Change Inventory
+          Update Inventory
         </button>
 
         {showInventory &&

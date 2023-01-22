@@ -24,9 +24,13 @@ ul {
 
 .button-enter-inventory {
   margin: 0 auto;
-  background-color: whitesmoke;
-  color: rgba(187, 84, 84, 0.753);
-  color: #4c3210;
+  background-color: #548290;
 
-  border: 3px ridge #4c3210;
+  color: white;
+
+  border: 3px ridge #416570;
+}
+.button-enter-inventory:hover {
+  color: whitesmoke;
+  background-color: #466a75;
 }

@@ -24,3 +24,6 @@
   cursor: pointer;
   border-radius: 12px;
 }
+.enter-button-landing-page:hover {
+  background-color: rgb(71, 105, 91);
+}
