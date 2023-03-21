@@ -1,8 +1,8 @@
 .description-component {
-  font-family: sans-serif;
+  font-family: "Poiret One", cursive;
   padding-top: 200px;
   line-height: 1.5;
-  font-size: 25px;
+  font-size: 30px;
 }
 .description {
   color: rgb(253, 245, 230);
@@ -15,7 +15,7 @@
   border-radius: 30%;
   border: 1px rgba(95, 133, 117, 0.795);
   width: 270px;
-  font-size: 20px;
+  font-size: 25px;
   padding: 20px;
   margin-top: 30px;
   text-align: center;
@@ -23,6 +23,8 @@
   margin: px 2px;
   cursor: pointer;
   border-radius: 12px;
+  font-family: "Poiret One", cursive;
+  font-weight: bold;
 }
 .enter-button-landing-page:hover {
   background-color: rgb(71, 105, 91);
